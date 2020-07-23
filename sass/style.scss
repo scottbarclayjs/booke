@@ -12,9 +12,23 @@
 		background-color: #fff;
 		color: #111;
 		padding: 1.5rem 0;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.493);
 		transition: all 0.6s;
+		&.nav-min {
+			padding: 0.75rem 0;
+		}
 		a {
 			color: #111;
+		}
+	}
+	&.unscroll {
+		background-color: transparent;
+		padding: 2rem 0;
+		box-shadow: none;
+		color: #fff;
+		transform: all 0.4s;
+		a {
+			color: #fff;
 		}
 	}
 	& .nav-content {
@@ -31,7 +45,7 @@
 			align-items: center;
 			& a {
 				margin: 0 1rem;
-				font-size: 1rem;
+				font-size: 0.9rem;
 			}
 		}
 	}
@@ -79,14 +93,14 @@
 					cursor: pointer;
 					background-color: transparent;
 					color: #fff;
-					transition: all 0.4s;
+					transition: all 0.2s;
 				}
 			}
 		}
 		.header-images {
 			width: 100%;
 			text-align: center;
-			margin-top: 5rem;
+			margin: 5rem 0;
 			img {
 				width: 45vw;
 			}
