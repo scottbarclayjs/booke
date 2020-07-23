@@ -82,6 +82,7 @@
 			h3 {
 				font-size: 1rem;
 				margin-top: 2rem;
+				font-weight: 300;
 			}
 			button {
 				background-color: #fff;
@@ -102,8 +103,14 @@
 			width: 100%;
 			text-align: center;
 			margin: 5rem 0;
-			img {
+			display: flex;
+			img:nth-of-type(1) {
 				width: 45vw;
+				margin: 0 2rem;
+			}
+			img:nth-of-type(2) {
+				width: 8vw;
+				margin: 0 2rem;
 			}
 		}
 	}
