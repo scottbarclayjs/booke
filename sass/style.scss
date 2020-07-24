@@ -34,7 +34,7 @@
 	& .nav-content {
 		display: flex;
 		justify-content: space-between;
-		max-width: 72vw;
+		max-width: 75rem;
 		margin: auto;
 		& h2 {
 			font-size: 1.75rem;
@@ -45,7 +45,7 @@
 			display: flex;
 			align-items: center;
 			& a {
-				margin: 0 1rem;
+				margin: 0 1.5rem;
 				font-size: 0.9rem;
 			}
 		}
@@ -53,10 +53,6 @@
 }
 
 .header {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100vw;
 	.header-background {
 		position: absolute;
 		top: 0;
@@ -64,16 +60,15 @@
 		background-color: #176cfa;
 		height: 100%;
 		width: 100vw;
-		clip-path: polygon(0 0, 100% 0, 100% 45%, 40% 60%, 0 25%);
+		clip-path: polygon(0 0, 100% 0, 100% 55%, 40% 70%, 0 35%);
 		z-index: -1;
 	}
 	.header-content {
-		max-width: 72vw;
+		max-width: 75rem;
 		margin: auto;
 		.header-main {
-			margin-top: 5rem;
 			max-width: 40vw;
-			margin: 12rem 0 5rem 0;
+			margin: 20rem 0 5rem 0;
 			h1 {
 				font-size: 2rem;
 				text-transform: uppercase;
@@ -81,8 +76,9 @@
 			}
 			h3 {
 				font-size: 1rem;
-				margin-top: 2rem;
+				margin-top: 2.5rem;
 				font-weight: 300;
+				max-width: 35rem;
 			}
 			button {
 				background-color: #fff;
@@ -90,7 +86,7 @@
 				border-radius: 35px;
 				font-size: 1rem;
 				border: 2px solid #fff;
-				margin-top: 2rem;
+				margin-top: 2.5rem;
 				&:hover {
 					cursor: pointer;
 					background-color: transparent;
@@ -102,15 +98,178 @@
 		.header-images {
 			width: 100%;
 			text-align: center;
-			margin: 5rem 0;
+			margin: 7rem 0;
 			display: flex;
+			justify-content: center;
 			img:nth-of-type(1) {
-				width: 45vw;
+				width: 700px;
+				height: 1000px;
 				margin: 0 2rem;
 			}
 			img:nth-of-type(2) {
-				width: 8vw;
+				width: 150px;
+				height: 1000px;
 				margin: 0 2rem;
+			}
+		}
+	}
+}
+
+.features {
+	background-color: rgb(250, 250, 250);
+	color: #222;
+	padding: 10rem 0;
+	.features-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 75rem;
+		margin: auto;
+	}
+	.features-intro {
+		align-self: start;
+		max-width: 50%;
+		h1 {
+			margin-bottom: 1.5rem;
+			font-size: 2rem;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+		}
+		hr {
+			width: 10%;
+			background-color: transparent;
+			color: transparent;
+			border: 1px solid $primary-color;
+			margin-bottom: 2rem;
+		}
+		p {
+			font-size: 1.1rem;
+			color: $sub-text-color;
+			margin-bottom: 3rem;
+		}
+	}
+	.features-cards {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		.features-card {
+			width: 23rem;
+			padding: 2rem;
+			margin: 1rem 0;
+			background-color: #fff;
+			border-top: 2px solid $primary-color;
+			box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+			&:nth-of-type(2),
+			&:nth-of-type(5) {
+				margin: 1rem 3rem;
+			}
+			i {
+				font-size: 2rem;
+				color: $primary-color;
+				padding: 1rem;
+				border: 1px solid $primary-color;
+				border-radius: 50%;
+				margin-bottom: 2rem;
+			}
+			h4 {
+				font-weight: 400;
+				margin-bottom: 1rem;
+			}
+			p {
+				color: $sub-text-color;
+			}
+			&:hover {
+				box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.4);
+				transform: translateY(-5px);
+				transition: all 0.6s;
+			}
+		}
+	}
+}
+
+.book-screenshots {
+	padding: 10rem 0;
+	.book-screenshots-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 75rem;
+		margin: auto;
+	}
+	.screenshots-intro {
+		align-self: start;
+		max-width: 50%;
+		h1 {
+			color: #222;
+			margin-bottom: 1.5rem;
+			font-size: 2rem;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+		}
+		hr {
+			width: 10%;
+			background-color: transparent;
+			color: transparent;
+			border: 1px solid $primary-color;
+			margin-bottom: 2rem;
+		}
+		p {
+			font-size: 1.1rem;
+			color: $sub-text-color;
+			margin-bottom: 2rem;
+		}
+		.screenshot-image-nav {
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
+			margin-bottom: 5rem;
+			button {
+				border: none;
+				color: $primary-color;
+				background-color: transparent;
+				font-size: 1.25rem;
+				height: 100%;
+				align-self: center;
+				&:hover {
+					cursor: pointer;
+					color: $primary-hover-color;
+					transition: all 0.6s;
+				}
+			}
+			p {
+				font-size: 1.25rem;
+				margin: 0 1rem;
+				height: 100%;
+			}
+		}
+	}
+	.screenshots-main {
+		position: relative;
+		width: 75rem;
+		height: 50rem;
+		img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			display: none;
+		}
+		.image-dot-nav {
+			display: flex;
+			position: absolute;
+			top: 101%;
+			.dot {
+				width: 10px;
+				height: 10px;
+				padding: 5px;
+				background-color: #aaa;
+				border: none;
+				border-radius: 50%;
+				margin-right: 0.25rem;
+				&:hover {
+					cursor: pointer;
+				}
 			}
 		}
 	}
