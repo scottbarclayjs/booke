@@ -8,6 +8,7 @@
 	width: 100vw;
 	background: transparent;
 	padding: 2rem 0;
+	z-index: 2;
 	&.scroll {
 		background-color: #fff;
 		color: #111;
@@ -269,6 +270,257 @@
 				margin-right: 0.25rem;
 				&:hover {
 					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+.author {
+	.author-content {
+		display: flex;
+		.author-img {
+			img {
+				width: 50vw;
+			}
+		}
+		.author-main {
+			color: #222;
+			padding: 6rem 8rem;
+			h2 {
+				font-size: 2rem;
+				font-weight: 300;
+				margin-bottom: 3rem;
+			}
+			p {
+				line-height: 2;
+				margin-bottom: 1rem;
+				color: $sub-text-color;
+				font-size: 1.1rem;
+				&:last-of-type {
+					margin-top: 3rem;
+					span {
+						font-weight: 700;
+					}
+				}
+			}
+			img {
+				width: 10vw;
+			}
+		}
+	}
+}
+
+.testimonials {
+	padding: 10rem 0 5rem 0;
+	.testimonials-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 75rem;
+		margin: auto;
+	}
+	.testimonials-intro {
+		align-self: start;
+		max-width: 50%;
+		h1 {
+			color: #222;
+			margin-bottom: 1.5rem;
+			font-size: 2rem;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+		}
+		hr {
+			width: 10%;
+			background-color: transparent;
+			color: transparent;
+			border: 1px solid $primary-color;
+			margin-bottom: 5rem;
+		}
+	}
+	.testimonials-cards {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		.testimonials-card {
+			width: 23rem;
+			padding: 2rem;
+			margin: 1rem 0;
+			background-color: #fff;
+			box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.3);
+			p {
+				color: #444;
+				font-weight: 400;
+				line-height: 1.8;
+			}
+			&:nth-of-type(2) {
+				margin: 1rem 3rem;
+			}
+			.user {
+				display: flex;
+				margin-top: 1.5rem;
+				img {
+					width: 100px;
+					height: 100px;
+					border-radius: 50%;
+				}
+				.info {
+					color: #444;
+					padding-left: 1rem;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					h4 {
+						font-size: 1.25rem;
+					}
+					h5 {
+						color: #888;
+						font-size: 1.1rem;
+						font-weight: 300;
+					}
+				}
+			}
+		}
+	}
+}
+
+.subscribe {
+	background-color: $primary-color;
+	padding: 3rem;
+	.subscribe-content {
+		max-width: 75rem;
+		margin: auto;
+		.subscribe-title {
+			margin-bottom: 1rem;
+			h2 {
+				font-size: 1.75rem;
+				font-weight: 300;
+				padding-left: 1rem;
+			}
+		}
+		.form {
+			input {
+				width: 85%;
+				padding: 1rem 2rem;
+				font-size: 1.2rem;
+				border-radius: 35px;
+				border: none;
+				margin-right: 1rem;
+			}
+			button {
+				padding: 1rem 1.75rem;
+				background-color: #fff;
+				font-size: 1.1rem;
+				border: 2px solid #fff;
+				border-radius: 35px;
+				&:hover {
+					cursor: pointer;
+					background-color: transparent;
+					color: #fff;
+					transition: all 0.4s;
+				}
+			}
+		}
+	}
+}
+
+.footer {
+	background-color: #333333;
+	padding-top: 20rem;
+	.footer-content {
+		max-width: 75rem;
+		margin: auto;
+		display: flex;
+		flex-wrap: wrap;
+		h3 {
+			margin-bottom: 2rem;
+		}
+		.footer-about,
+		.footer-navigation,
+		.footer-contact {
+			width: 23rem;
+		}
+		.footer-about {
+			p {
+				color: #aaa;
+				font-weight: 400;
+				line-height: 2;
+			}
+		}
+		.footer-navigation {
+			margin: 0 3rem;
+			text-align: center;
+			.footer-nav-links {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				a {
+					margin: 0.5rem 0;
+					color: #aaa;
+					&:hover {
+						color: #fff;
+						transition: all 0.4s;
+					}
+				}
+			}
+		}
+		.footer-contact {
+			.form {
+				display: flex;
+				flex-direction: column;
+				input {
+				}
+				input,
+				textarea {
+					padding: 0.75rem 1rem;
+					border-radius: 25px;
+					border: none;
+					background-color: rgba(200, 200, 200, 0.201);
+					color: #fff;
+					margin-bottom: 1.5rem;
+				}
+				button {
+					width: 12rem;
+					padding: 0.75rem 0;
+					border-radius: 35px;
+					border: 2px solid $primary-color;
+					font-size: 1rem;
+					background-color: $primary-color;
+					color: #fff;
+					&:hover {
+						cursor: pointer;
+						background-color: transparent;
+						color: $primary-color;
+						transition: all 0.4s;
+					}
+				}
+			}
+		}
+		.social-copyright {
+			padding: 8rem 0 5rem 0;
+			width: 100%;
+			text-align: center;
+			i {
+				margin: 2rem 1rem;
+				font-size: 1.5rem;
+			}
+			p {
+				font-size: 1rem;
+				color: $sub-text-color;
+				i {
+					margin: 0;
+					font-size: 1rem;
+					&:nth-of-type(2) {
+						color: #dc3545;
+					}
+				}
+				a {
+					color: $sub-text-color;
+					font-weight: 400;
+					&:hover {
+						color: #fff;
+						transition: all 0.4s;
+					}
 				}
 			}
 		}
