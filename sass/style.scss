@@ -109,11 +109,13 @@
 				width: 40rem;
 				height: 60rem;
 				margin: 0 2rem;
+				border-radius: 5px;
 			}
 			img:nth-of-type(2) {
 				width: 7rem;
 				height: 60rem;
 				margin: 0 2rem;
+				border-radius: 5px;
 			}
 		}
 	}
@@ -255,7 +257,15 @@
 			height: 100%;
 			top: 0;
 			left: 0;
-			display: none;
+			opacity: 0;
+			&.showImage {
+				opacity: 1;
+				transition: all 1s;
+			}
+			&.hideImage {
+				opacity: 0;
+				transition: all 1s;
+			}
 		}
 		.image-dot-nav {
 			display: flex;
@@ -397,7 +407,7 @@
 	background-color: $primary-color;
 	padding: 2rem;
 	.subscribe-content {
-		max-width: 75rem;
+		max-width: 90rem;
 		margin: auto;
 		.subscribe-title {
 			margin-bottom: 1rem;
@@ -534,6 +544,22 @@
 					}
 				}
 			}
+		}
+	}
+}
+
+// Screenshot image animation
+
+.screenshots-main {
+	img {
+		opacity: 0;
+		&.showImage {
+			opacity: 1;
+			transition: all 1s;
+		}
+		&.hideImage {
+			height: 0;
+			transition: all 1s;
 		}
 	}
 }

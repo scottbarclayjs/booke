@@ -22,10 +22,13 @@ let displayImage = 0;
 imageCycle();
 function imageCycle() {
 	for (let i = 0; i < bookImages.length; i++) {
-		bookImages[i].style.display = 'none';
+		bookImages[i].classList.add('hideImage');
+		bookImages[i].classList.remove('showImage');
 		imageDot[i].style.backgroundColor = '#aaa';
 	}
-	bookImages[displayImage].style.display = 'block';
+	bookImages[displayImage].classList.remove('hideImage');
+	bookImages[displayImage].classList.add('showImage');
+	console.log(bookImages[displayImage]);
 	imageDot[displayImage].style.backgroundColor = '#1c63fb';
 	if (displayImage < bookImages.length - 1) {
 		displayImage++;
@@ -34,7 +37,7 @@ function imageCycle() {
 	}
 }
 
-let t = setInterval(imageCycle, 4000);
+let t = setInterval(imageCycle, 5000);
 
 for (let i = 0; i < imageDot.length; i++) {
 	imageDot[i].addEventListener('click', () => {
