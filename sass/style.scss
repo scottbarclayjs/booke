@@ -37,6 +37,7 @@
 		justify-content: space-between;
 		max-width: 75rem;
 		margin: auto;
+		padding: 0 2rem;
 		& h2 {
 			font-size: 1.75rem;
 			font-weight: 700;
@@ -61,12 +62,13 @@
 		background-color: #176cfa;
 		height: 100%;
 		width: 100vw;
-		clip-path: polygon(0 0, 100% 0, 100% 55%, 40% 70%, 0 35%);
+		clip-path: polygon(0 0, 150rem 0, 140rem 45rem, 65rem 70rem, 0 45rem);
 		z-index: -1;
 	}
 	.header-content {
 		max-width: 75rem;
 		margin: auto;
+		padding: 0 2rem;
 		.header-main {
 			max-width: 40vw;
 			margin: 20rem 0 5rem 0;
@@ -88,6 +90,7 @@
 				font-size: 1rem;
 				border: 2px solid #fff;
 				margin-top: 2.5rem;
+				box-shadow: 0 0 5px rgba(0, 0, 0, 0.397);
 				&:hover {
 					cursor: pointer;
 					background-color: transparent;
@@ -103,13 +106,13 @@
 			display: flex;
 			justify-content: center;
 			img:nth-of-type(1) {
-				width: 700px;
-				height: 1000px;
+				width: 40rem;
+				height: 60rem;
 				margin: 0 2rem;
 			}
 			img:nth-of-type(2) {
-				width: 150px;
-				height: 1000px;
+				width: 7rem;
+				height: 60rem;
 				margin: 0 2rem;
 			}
 		}
@@ -126,6 +129,7 @@
 		align-items: center;
 		max-width: 75rem;
 		margin: auto;
+		padding: 0 2rem;
 	}
 	.features-intro {
 		align-self: start;
@@ -156,14 +160,10 @@
 		.features-card {
 			width: 23rem;
 			padding: 2rem;
-			margin: 1rem 0;
+			margin: 1rem;
 			background-color: #fff;
 			border-top: 2px solid $primary-color;
 			box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
-			&:nth-of-type(2),
-			&:nth-of-type(5) {
-				margin: 1rem 3rem;
-			}
 			i {
 				font-size: 2rem;
 				color: $primary-color;
@@ -196,6 +196,7 @@
 		align-items: center;
 		max-width: 75rem;
 		margin: auto;
+		padding: 0 2rem;
 	}
 	.screenshots-intro {
 		align-self: start;
@@ -279,14 +280,21 @@
 .author {
 	.author-content {
 		display: flex;
-		.author-img {
-			img {
-				width: 50vw;
+		.author-background-img {
+			width: 50vw;
+			.author-background {
+				width: 100%;
+				height: 100%;
+				background-image: url(/assets/author.jpg);
+				background-position: center;
+				background-size: cover;
 			}
 		}
 		.author-main {
 			color: #222;
-			padding: 6rem 8rem;
+			padding: 6rem 3rem;
+			max-width: 60rem;
+			margin: auto;
 			h2 {
 				font-size: 2rem;
 				font-weight: 300;
@@ -319,6 +327,7 @@
 		align-items: center;
 		max-width: 75rem;
 		margin: auto;
+		padding: 0 2rem;
 	}
 	.testimonials-intro {
 		align-self: start;
@@ -386,7 +395,7 @@
 
 .subscribe {
 	background-color: $primary-color;
-	padding: 3rem;
+	padding: 2rem;
 	.subscribe-content {
 		max-width: 75rem;
 		margin: auto;
@@ -400,7 +409,7 @@
 		}
 		.form {
 			input {
-				width: 85%;
+				width: 80%;
 				padding: 1rem 2rem;
 				font-size: 1.2rem;
 				border-radius: 35px;
@@ -431,14 +440,16 @@
 		max-width: 75rem;
 		margin: auto;
 		display: flex;
+		justify-content: center;
 		flex-wrap: wrap;
+		padding: 0 2rem;
 		h3 {
 			margin-bottom: 2rem;
 		}
 		.footer-about,
 		.footer-navigation,
 		.footer-contact {
-			width: 23rem;
+			width: 20rem;
 		}
 		.footer-about {
 			p {
