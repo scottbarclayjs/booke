@@ -26,10 +26,16 @@
 	}
 	header.header {
 		.header-content {
+			width: 99vw;
 			.header-main {
+				margin: 10rem 0 5rem 0;
 				max-width: 99vw;
 			}
 			.header-images {
+				img:nth-of-type(1) {
+					max-width: 99vw;
+					max-height: 50vh;
+				}
 				img:nth-of-type(2) {
 					display: none;
 				}
