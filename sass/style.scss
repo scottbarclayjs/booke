@@ -1,5 +1,6 @@
 @import 'resets';
 @import 'reuseables';
+@import 'queries';
 
 .nav {
 	position: fixed;
@@ -35,7 +36,8 @@
 	& .nav-content {
 		display: flex;
 		justify-content: space-between;
-		max-width: 75rem;
+		width: 75rem;
+		max-width: 100vw;
 		margin: auto;
 		padding: 0 2rem;
 		& h2 {
@@ -66,7 +68,8 @@
 		z-index: -1;
 	}
 	.header-content {
-		max-width: 75rem;
+		width: 75rem;
+		max-width: 100vw;
 		margin: auto;
 		padding: 0 2rem;
 		.header-main {
@@ -100,20 +103,20 @@
 			}
 		}
 		.header-images {
-			width: 100%;
+			max-width: 100%;
 			text-align: center;
 			margin: 7rem 0;
 			display: flex;
 			justify-content: center;
 			img:nth-of-type(1) {
-				width: 40rem;
-				height: 60rem;
+				max-width: 100vw;
+				max-height: 60rem;
 				margin: 0 2rem;
 				border-radius: 5px;
 			}
 			img:nth-of-type(2) {
-				width: 7rem;
-				height: 60rem;
+				max-width: 7rem;
+				max-height: 60rem;
 				margin: 0 2rem;
 				border-radius: 5px;
 			}
@@ -160,7 +163,7 @@
 		justify-content: center;
 		flex-wrap: wrap;
 		.features-card {
-			width: 23rem;
+			width: 21rem;
 			padding: 2rem;
 			margin: 1rem;
 			background-color: #fff;
@@ -196,7 +199,8 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		max-width: 75rem;
+		width: 75rem;
+		max-width: 100vw;
 		margin: auto;
 		padding: 0 2rem;
 	}
@@ -250,6 +254,7 @@
 	.screenshots-main {
 		position: relative;
 		width: 75rem;
+		max-width: 100vw;
 		height: 50rem;
 		img {
 			position: absolute;
@@ -271,6 +276,7 @@
 			display: flex;
 			position: absolute;
 			top: 101%;
+			left: 1%;
 			.dot {
 				width: 10px;
 				height: 10px;
@@ -362,7 +368,7 @@
 		justify-content: center;
 		flex-wrap: wrap;
 		.testimonials-card {
-			width: 23rem;
+			width: 21rem;
 			padding: 2rem;
 			margin: 1rem 0;
 			background-color: #fff;
@@ -489,8 +495,6 @@
 			.form {
 				display: flex;
 				flex-direction: column;
-				input {
-				}
 				input,
 				textarea {
 					padding: 0.75rem 1rem;

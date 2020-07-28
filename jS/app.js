@@ -28,7 +28,6 @@ function imageCycle() {
 	}
 	bookImages[displayImage].classList.remove('hideImage');
 	bookImages[displayImage].classList.add('showImage');
-	console.log(bookImages[displayImage]);
 	imageDot[displayImage].style.backgroundColor = '#1c63fb';
 	if (displayImage < bookImages.length - 1) {
 		displayImage++;

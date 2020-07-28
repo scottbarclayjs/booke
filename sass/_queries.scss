@@ -1,0 +1,117 @@
+@media (max-width: 769px) {
+	nav.nav {
+		& .nav-content {
+			width: 100vw;
+			padding: 0;
+			.nav-left {
+				display: none;
+			}
+			h2 {
+				font-size: 1rem;
+				display: none;
+			}
+			.nav-right {
+				width: 100%;
+			}
+			.nav-links {
+				width: 95vw;
+				margin: auto;
+				justify-content: center;
+				a {
+					margin: 0 0.5rem;
+					font-size: 0.7rem;
+				}
+			}
+		}
+	}
+	header.header {
+		.header-content {
+			.header-main {
+				max-width: 99vw;
+			}
+			.header-images {
+				img:nth-of-type(2) {
+					display: none;
+				}
+			}
+		}
+	}
+
+	section.features {
+		.features-intro {
+			max-width: 99vw;
+		}
+		.features-cards {
+			.features-card {
+				width: 70vw;
+			}
+		}
+	}
+
+	section.book-screenshots {
+		.screenshots-intro {
+			max-width: 99vw;
+		}
+		.screenshots-main {
+			height: 50vh;
+			img {
+			}
+		}
+	}
+
+	section.author {
+		padding-top: 5rem;
+		.author-content {
+			flex-direction: column;
+			.author-background-img {
+				width: 100vw;
+				height: 50vh;
+			}
+		}
+	}
+
+	section.testimonials {
+		.testimonials-intro {
+			max-width: 99vw;
+		}
+	}
+
+	section.subscribe {
+		.subscribe-content {
+			.subscribe-title {
+				text-align: center;
+			}
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.form {
+				display: flex;
+				flex-direction: column;
+				align-self: center;
+				input {
+					width: 90vw;
+				}
+				button {
+					width: 15rem;
+					margin: 1rem auto;
+				}
+			}
+		}
+	}
+
+	footer.footer {
+		.footer-content {
+			max-width: 100vw;
+			.footer-about {
+				margin-bottom: 3rem;
+			}
+			.footer-navigation {
+				margin: 0;
+				margin-bottom: 3rem;
+			}
+			.footer-contact {
+				margin-bottom: 3rem;
+			}
+		}
+	}
+}
