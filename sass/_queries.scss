@@ -26,7 +26,7 @@
 	}
 	header.header {
 		.header-content {
-			width: 99vw;
+			width: 100vw;
 			.header-main {
 				margin: 10rem 0 5rem 0;
 				max-width: 99vw;
@@ -72,6 +72,11 @@
 			.author-background-img {
 				width: 100vw;
 				height: 50vh;
+			}
+			.author-main {
+				img {
+					width: 10rem;
+				}
 			}
 		}
 	}
